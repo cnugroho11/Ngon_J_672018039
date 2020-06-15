@@ -40,7 +40,7 @@ void display(void)
 	glBegin(GL_LINE_STRIP);
     for(i = 0; i < 10 ; i += angleInc)
     {
-        glColor3f(0.7,(150+i)/255.0f,(50.6-i)/255.0f);
+        glColor3f(0.2,(150+i)/205.0f,(255.6-i)/255.0f);
         spiral(6,0,0,i+0.25,180-i*6);
     }
 	glEnd();
@@ -52,7 +52,7 @@ int main(int argc, char** argv)
 {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-	glutInitWindowSize(500,400);
+	glutInitWindowSize(600,600);
 	glutInitWindowPosition(50 , 50);
 	glutCreateWindow("Cahyo Nugroho - 672018039");
 	init();
